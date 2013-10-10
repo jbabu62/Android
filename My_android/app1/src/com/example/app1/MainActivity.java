@@ -12,11 +12,13 @@ public class MainActivity extends Activity {
 
 	Button btnsubmit;
 	
+	
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         btnsubmit= (Button)findViewById(R.id.button1);
+        
         btnsubmit.setOnClickListener(new OnClickListener() {
 			
 			@Override
@@ -26,6 +28,7 @@ public class MainActivity extends Activity {
 				startActivity(secondform);
 			}
 		});
+        
         
         
     }
